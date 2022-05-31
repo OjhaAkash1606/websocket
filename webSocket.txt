@@ -99,6 +99,148 @@ binary
 multi-room
 blocker
 
+
+
+
+
+
+
+
+1) difference between oninput and onchange events. 
+
+    input event is similar to the onchange event. The difference is that the oninput event occurs immediately after the value of an element has changed, while onchange occurs when the element loses focus, after the content has been changed. The other difference is that the onchange event also works on <select> elements.
+
+Note : 
+     -Bydefault get syntheticBaseEvent when any events     occurs.(syntheticEvent uses as synchronus and if we want to use it as asynchronus we must use event.persist() method.)
+     
+     -For updating state depending on previous state we use function inside setState that function get previous state Bydefault (when store multiple value at one state)
+
+     -Pass data from child to parent component using event with the help of function.
+
+     -importance of key(unique id) when dynamic rendering list of data.
+
+     -toISOString() method is used to convert date object's into string in ISO formate like (yy-mm-dd) here also can use toLocaleString() and object.getFullYear().
+
+     -custom component using as a wrapper like Card component (wrapper component).
+
+
+
+2) difference between regular and arrow function
+    
+    "syntax"
+
+    "this keyword" 
+
+        In regular function, this keyword depends on how to invoke the function
+
+            -if we invoke the function as a regular "Function()" then this keyword gets the value of window object.(Note:but in strict mode this keyword return undefined)
+
+            -if we invoke the function like "Function.call() or Function.apply()" then this keyword gets the first argument as value of it and remainnig as a parameter.(Note:In apply method argument take must in array and in call method can be array or multiple arguments.  )
+
+            -if we invoke the function inside the object then this keyword takes the value as a object.
+
+            if we invoke the function with new keyword then this keyword takes the instance as function.
+
+        "this keyword" in arrow function 
+
+            In arrow function this keyword takes the value from parent regular function. 
+
+    "constructors"
+
+        In regular function
+
+            In regular function new keyword creates new instance of function 
+        
+        In arrow function
+            In arrow function new keyword doesn't create instance of function.
+
+    "Bydefault behaviour of arguments" (all arguments take without parameter)
+
+        In regular function
+            In regular function, arguments is a special key which is contain all arguments in array.
+
+        In arrow function 
+            In arrow function arguments is using as lexically means takes parent regular function's arguments.
+
+    "Implicit return"
+
+        In regular function 
+            If return expression is not defined or missing in regular function then return "undefined"
+
+        In arrow function
+            In arrow function if only one expression without return then it takes that expression as return.  
+            and if more than one expression then it is return undifined (if missing return)
+
+    "No duplicate parameter name"
+        
+        In regular function
+             we use the duplicate parameter name in strict mode then gives error for that but if doesn't use the strict mode then will not give the error.
+
+        In arrow function
+            In arrow function, duplicate parameter's name gives the error doesn't matter strict mode has used or not.
+
+
+
+What is Server ? Complete explaination of server?
+server is a system that provides data, resources ,services and programs to other computer and fulfill request of other computer.
+Advantages of server
+Backup
+Security
+Storage
+Difference between server and system
+Server is always connected with highspeed of internet compare to user's system
+Server's ram is to high compare to user's system.
+server is always switch on.
+server is main system of it's own network.
+Similarity between server and system
+Server and user's System both have operating system and ram.
+Types of server ?
+File Server
+Application server
+Mail server
+Web server
+Database server
+Disadvantage of server
+if Server failed then the entire network has fail.
+Server is too coastly. small entity can not buy it.
+What is javascript ?
+JavaScript is a High Level
+Prototype-Based object oriented
+Multi-paradigm
+Procedural programming
+Object oriented programming
+functional programming language
+Interpreted or just-in-time-compiled
+Dynamic
+Singal threaded
+Garbage-collection programming language
+Garbage collection is a basically algorithm inside the JavaScript engine which is automatically removes old and unused object from the computer memory. in order not to clog it up with unnecessary stuff.
+with first class functions
+and a Non blocking event loop concurrency modal.
+Concurrency Modal
+How the javascript engine handles multiple tasks happening at the same time.
+
+
+
+
+
+
+What is modules in js ?
+Module is a just js file with .js extension.
+The objects in a module are not available for use unless the module file export them.
+There are two types of module function.
+Export function
+There are two types of export method or function.
+export default
+only one export default per module
+export name
+Import function
+    
+    
+    
+    
+
+
     
 
 
